@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>CSS3 Caption Hover Effects </title>
+
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Raleway:400,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+<style>
+.demo-2 {
+    position:relative;
+    width:300px;
+    height:200px;
+    overflow:hidden;
+    float:left;
+    margin-right:20px;
+    background-color:rgba(26,76,110,0.5)
+}
+
+.demo-2 p,.demo-2 h2 {
+    color:#fff;
+    padding:10px;
+    left:-20px;
+    top:20px;
+    position:relative
+}
+
+.demo-2 p {
+    font-family:'Lato';
+    font-size:12px;
+    line-height:18px;
+    margin:0
+}
+
+.demo-2 h2 {
+    font-size:20px;
+    line-height:24px;
+    margin:0;
+    font-family:'Lato'
+}
+
+.effect img {
+    position:absolute;
+    left:0;
+    bottom:0;
+    cursor:pointer;
+    margin:-12px 0;
+    -webkit-transition:bottom .3s ease-in-out;
+    -moz-transition:bottom .3s ease-in-out;
+    -o-transition:bottom .3s ease-in-out;
+    transition:bottom .3s ease-in-out
+}
+
+.effect img.top:hover {
+    bottom:-96px;
+    padding-top:100px
+}
+
+h2.zero,p.zero {
+    margin:0;
+    padding:0
+}
+
+
+</style>
+
+
+
+    </head>
+
+<body>
+
+<ul>
+<li>
+     <ul class="demo-2 effect">
+        <li>
+            <h2 class="zero">This is a cool title!</h2>
+            <p class="zero">Lorem ipsum dolor sit amet.</p>
+        </li>
+        
+        <li><img class="top" src="images/image1.jpg" alt=""/></li>
+    </ul>
+</li>
+
+
+<li>
+     <ul class="demo-2 effect">
+        <li>
+            <h2 class="zero">This is a cool title!</h2>
+            <p class="zero">Lorem ipsum dolor sit amet.</p>
+        </li>
+        
+        <li><img class="top" src="images/image2.jpg" alt=""/></li>
+    </ul>
+</li>
+
+
+
+<li>
+     <ul class="demo-2 effect">
+        <li>
+            <h2 class="zero">This is a cool title!</h2>
+            <p class="zero">Lorem ipsum dolor sit amet.</p>
+        </li>
+        
+        <li><img class="top" src="images/image3.jpg" alt=""/></li>
+    </ul>
+</li>
+
+</ul>
+
+</body>
+</html>
